@@ -61,7 +61,7 @@ body{
 .hero{
     margin-top:10vh;
     height: 100vh;
-
+    
     .hero-image{
         // background: $background-light;
         // background-image: $background-light;
@@ -70,6 +70,9 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
     }
     .hero-content{
         text-align: center;
@@ -105,5 +108,41 @@ body{
             }
         }
     }
+    .hero-contFaq{
+        display: flex;
+        width: 40%;
+        justify-content: center;  
+        height: 100%;
+        align-items: center;
+        flex-direction: row;
+        .titFaq{
+            padding: 20% 30% 20% 35%;
+            border-right: 2px $secondary-color groove;
+            font-size: 6vh;
+        }
+    }
+    .hero-contFaq2{
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        .dropdownFaq{
+            position: relative;
+        }
+        .dropdownFaqCont{
+            display: none;
+            box-shadow: 0px 8px 20px 0px;
+            padding: 10px;
+            position: absolute;
+            
+        }
+        .dropdownFaq:hover .dropdownFaqCont{
+            display: block;
+        }
+    }
+    
+    
 }
  
