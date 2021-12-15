@@ -107,3 +107,14 @@ body {
       position: absolute; }
     .hero .hero-contFaq2 .dropdownFaq:hover .dropdownFaqCont {
       display: block; }
+
+#ukuran{
+  width: 15%;
+  height: 15%;
+}
+
+#judulbs{
+  font-size: 20pt;
+  color: #FD7F7F;
+  font-style: ;
+}
