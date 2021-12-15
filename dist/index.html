@@ -8,7 +8,64 @@
     <link rel="stylesheet" href="/dist/css/main.css">
     <title>Home</title>
 </head>
+<style>
+   /* temporary stylesheet for popup  */
+    .overlay{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: #121212;
+        opacity: 70%;
+        z-index: 10;
+        display: none;
+    }
+    .popup{
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 100;
+    }
+    .contentBox{
+        position: relative;
+        width: 600px;
+        height: 100px;
+        background-color:burlywood;
+        /* text-align: center; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contentBox a{
+        /* text-decoration: none; */
+        font-size: 40px;
+        color: black;
+    }
+    #close{
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        width: 40px;
+        height: 40px;
+        background-color: ;
+    }
+    #close:hover{
+        cursor: pointer;
+    }
+
+</style>
 <body class="th light">
+    <!-- popup -->
+    <!-- temporary(changed after final submission) -->
+    <div class="overlay"></div>
+    <div class="popup">
+        <div class="contentBox">
+            <i class="fas fa-times" id="close" ></i>
+            <a href="https://github.com/adityafjri/TubesIMK" target="_blank">Trace our work here !</a>
+        </div>
+    </div>
+
     <!-- navigasi -->
     <div class="navbar">
         <div class="nav-logo">
@@ -16,9 +73,9 @@
         </div>
 
         <div class="nav-menu-mid">
-            <a href="#png-6"><h3>menu</h3></a>
-            <a href="#png-4"><h3>menu</h3></a>
-            <a href="#png-4"><h3>menu</h3></a>
+            <a href="#"><h3>menu</h3></a>
+            <a href="#"><h3>menu</h3></a>
+            <a href="#"><h3>menu</h3></a>
         </div>
 
         <div class="nav-menu-right">
@@ -48,7 +105,8 @@
             </div>
         </div>
     </div>
-    <div class="new-collection">
+
+    <!-- <div class="new-collection">
         <p id="judulnc"> NEW COLLECTION NEW COLLECTION NEW COLLECTION NEW COLLECTION
             NEW COLLECTION NEW COLLECTION NEW COLLECTION NEW COLLECTION </p>
         <div>
@@ -67,8 +125,9 @@
             <img id="ukuran2" src="../res/Buku.jpg" alt="">
             <img id="ukuran2" src="../res/Buku.jpg" alt="">
         </div>
-    </div>
+    </div> -->
 
+<!-- modal signin -->
     <div class="signIn">
         <div>
             <form class="form-container">
@@ -79,4 +138,20 @@
         </div>
     </div>
 </body>
+<script>
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('#close');
+    const overlay = document.querySelector('.overlay');
+
+    window.onload = function(){
+        setTimeout(function(){
+            popup.style.display = "block";
+            overlay.style.display = "block";
+        }, 1000)
+    }
+    close.addEventListener('click',()=>{
+        popup.style.display = "none";
+        overlay.style.display = "none";
+    })
+</script>
 </html>
