@@ -7,69 +7,12 @@
     <script src="https://kit.fontawesome.com/bd45d9ab9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/dist/css/main.css">
     
-    <title>Home</title>
+    <title>Catalogue</title>
 </head>
-<style> 
-   /* temporary stylesheet for popup  */
-    .overlay{
-        position: fixed;
-        height: 1000%;
-        width: 100%;
-        background: #121212;
-        opacity: 70%;
-        z-index: 10;
-        display: none;
-    }
-    .popup{
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        z-index: 100;
-    }
-    .contentBox{
-        position: relative;
-        width: 600px;
-        height: 100px;
-        background-color:burlywood;
-        /* text-align: center; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .contentBox a{
-        /* text-decoration: none; */
-        font-size: 40px;
-        color: black;
-    }
-    #close{
-        position: absolute;
-        top: 20px;
-        right: 0px;
-        width: 40px;
-        height: 40px;
-        /* background-color: ; */
-    }
-    #close:hover{
-        cursor: pointer;
-    }
 
-</style> -->
-<body class="th light">
-            <!-- popup -->
-            
-            <div class="overlay"></div>
-            <div class="popup">
-                <div class="contentBox">
-                    <i class="fas fa-times" id="close" ></i>
-                    <a href="https://github.com/adityafjri/TubesIMK" target="_blank">Choose your language</a>
-                </div>
-            </div>
-
-    <!-- tool -->
+<body style="margin-top: 25vh;">
     <div class="tool">
-        <div class="menu-btn">
+        <div class="menu-btn" >
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
@@ -95,7 +38,7 @@
     <!-- navigasi -->
     <div class="navbar">
         <div class="nav-logo">
-            <h1 class="logo">Om-John</h1>
+            <h1 class="logo" onclick="redirectHome()">Om-John</h1>
         </div>
 
         <div class="nav-menu-mid">
@@ -117,78 +60,22 @@
                 </a>
             </div>
         </div>
-    </div> 
-
-    <!-- hero -->
-    <div class="hero">
-        <div class="hero-image" style="background-image: url('../res/santiago-yanez-SmzQhQuv5Cg-unsplash.jpg');">
-            <div class="hero-content">
-                <h1 class="title">
-                     Buku Om John
-                </h1>
-                <div class="hero-btn">
-                    <p>Shop Now</p> <p>→</p>
-                </div>
-            </div>
+    </div>
+    
+    <!-- catalogue-feature -->
+    <div class="catalogue-feature">
+        <ul class="feature-menu">
+            <li style="background-color: white;"><h2>Filter by :</h2></li>
+            <li><a href="#">Genre_1</a></li>
+            <li><a href="#">Genre_2</a></li>
+            <li><a href="#">Genre_3</a></li>
+        </ul>
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
         </div>
     </div>
 
-    <!-- <div class="new-collection">
-        <p id="judulnc"> NEW COLLECTION NEW COLLECTION NEW COLLECTION NEW COLLECTION
-            NEW COLLECTION NEW COLLECTION NEW COLLECTION NEW COLLECTION </p>
-        <div>
-            <img id="ukuran1" src="../res/Buku.jpg" alt="">
-            <pre id="lorem">  
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lor
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-            </pre>
-        </div>
-    </div>
-    <div class="best-seller">
-        <p id="judulbs"><b> BEST SELLER </b></p>     
-        <div>
-            <img id="ukuran2" src="../res/Buku.jpg" alt="">
-            <img id="ukuran2" src="../res/Buku.jpg" alt="">
-            <img id="ukuran2" src="../res/Buku.jpg" alt="">
-        </div>
-    </div> -->
-
-<!-- intro -->
-    <div class="intro">
-        <div class="intro-left">
-            <div class="intro-left-content">
-                <div class="content-top">
-                    <h1>
-                        Toko paling keren
-                    </h1>
-                    <h2>
-                        Lorem Ipsum
-                    </h2>
-                </div>
-                <div class="content-bot">
-                    <h2>Lorem ipsum dolor sit amet consecte<br>tur adipisicing elit. 
-                        Debitis eos non ab  <br>is! Ipsa adipisci pariatur dolores nisi? <br>
-                        Quas, et dolores vel expedita amet </h2>
-                </div>
-            </div>
-            <div class="intro-button">
-                <div>
-                    <p>Shop Now</p> <p>→</p>
-                </div>
-            </div>
-        </div>
-        <div class="intro-right" style="background-image: url('../res/john-schnobrich-bNCKsUyQYmM-unsplash.jpg');">
-
-        </div>
-    </div>
-<!-- txt banner -->
-    <div class="text-banner">
-        <h1>
-            Best Seller 
-        </h1>
-    </div>
-<!-- best seller -->
+    <!-- catalogue -->
     <div class="best-seller">
         <div class="container">
             <div class="innerContainer">
@@ -254,7 +141,7 @@
                     <a>Add to cart</a>
                 </div>
             </div>
-            <!-- <div class="innerContainer">
+            <div class="innerContainer">
                 <div class="card">
                     <div class="imgBox">
                         <img src="../res/Buku.jpg" alt="">
@@ -316,39 +203,50 @@
                 <div class="btn">
                     <a href="#">Add to cart</a>
                 </div>
-            </div> -->
+            </div>
             
         </div>
     </div>
-
-    
-    <!-- modal signin -->
-        <div class="sign-in">
-            <div>
-                <form class="form-container">
-                    <label for="email">Email</label>
-                    <input type="text" name="email">
-                    
-                </form>
-            </div>
-        </div>
 </body>
 <script>
-    const popup = document.querySelector('.popup');
-    const close = document.querySelector('#close');
-    const overlay = document.querySelector('.overlay');
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+    const menuNav = document.querySelector('.menu-nav');
+    const logoJohn = document.querySelector('.logo')
+    const navItems = document.querySelectorAll('.nav-item');
 
-    window.onload = function(){
-        setTimeout(function(){
-            popup.style.display = "block";
-            overlay.style.display = "block";
-        }, 1000)
-    }
-    close.addEventListener('click',()=>{
-        popup.style.display = "none";
-        overlay.style.display = "none";
-    })
-</script>
-<script src="../dist/js/main.js"></script>
+    let showMenu = false;
+
+    menuBtn.addEventListener('click', toggleMenu);
+    logoJohn.addEventListener('click',redirectHome);
+
+function redirectHome(){
+    console.log("home")
+    window.location='index.html'
+}
+
+
+function toggleMenu() {
+    console.log("ha");
+    if (!showMenu) {
         
+        menuBtn.classList.add('close');
+        menu.classList.add('show');
+        menuNav.classList.add('show');
+        // menuBranding.classList.add('show');
+        navItems.forEach(item => item.classList.add('show'));
+
+        showMenu = true;
+    } else {
+        menuBtn.classList.remove('close');
+        menu.classList.remove('show');
+        menuNav.classList.remove('show');
+        // menuBranding.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
+
+        showMenu = false;
+    }
+}
+
+</script>
 </html>
