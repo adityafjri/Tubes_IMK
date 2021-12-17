@@ -81,8 +81,7 @@
 
 body {
   margin: 0;
-  padding: 0;
-  height: 300vh; }
+  padding: 0; }
   body .sign-in {
     display: none; }
   body .catalogue-feature {
@@ -369,6 +368,24 @@ body {
           transform: scaleX(1);
           transition: transform 0.5s ease-in-out;
           transform-origin: left; }
+  body .footer {
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ecdbba;
+    top: 11vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    body .footer p {
+      margin: 0 3vh;
+      font-size: 3vh;
+      text-align: center;
+      line-height: 10vh; }
+      body .footer p a {
+        color: #191919; }
   body .faq {
     margin-top: 7vh;
     height: 100vh; }

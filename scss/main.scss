@@ -8,7 +8,7 @@ body{
     
     margin: 0;
     padding: 0;
-    height: 300vh;
+    // min-height: 330vh;
 //login modal
     .sign-in{
         display:none;
@@ -432,6 +432,31 @@ body{
             
         }
     }
+// footer
+.footer{
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: $teal-color;
+    top: 11vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    p{
+        margin: 0 3vh;
+        font-size: 3vh;
+        text-align: center;
+        line-height: 10vh;
+        
+        
+        a{
+            color: $secondary-color;
+        }
+    }
+}
 
 // Faq 
 .faq{
