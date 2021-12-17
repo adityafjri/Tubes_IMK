@@ -5,12 +5,15 @@ const menuNav = document.querySelector('.menu-nav');
 const logoJohn = document.querySelector('.logo')
 // const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
+const signinBtn = document.querySelector('.signin-btn');
 
 let showMenu = false;
 
 heroBtn.addEventListener('click',redirectCatalogue);
 menuBtn.addEventListener('click', toggleMenu);
 logoJohn.addEventListener('click',redirectHome);
+signinBtn.addEventListener('click',signinPop);
+
 
 function redirectHome(){
     console.log("home")
@@ -42,5 +45,8 @@ function toggleMenu() {
 
         showMenu = false;
     }
+}
+function signinPop(){
+    document.getElementById("")
 }
 

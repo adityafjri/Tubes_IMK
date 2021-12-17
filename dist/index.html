@@ -60,10 +60,10 @@
             <!-- popup -->
             
             <div class="overlay"></div>
-            <div class="popup">
-                <div class="contentBox">
-                    <i class="fas fa-times" id="close" ></i>
-                    <a href="https://github.com/adityafjri/TubesIMK" target="_blank">Choose your language</a>
+                <div class="popup">
+                    <div class="contentBox">
+                        <i class="fas fa-times" id="close" ></i>
+                        <a href="https://github.com/adityafjri/TubesIMK" target="_blank">Choose your language</a>
                 </div>
             </div>
 
@@ -112,7 +112,7 @@
                 <!-- <a href="">
                     <i class="fas fa-shopping-cart fa-2x"></i>
                 </a> -->
-                <a href="#" onclick="">
+                <a href="#" class= "signin-btn">
                     <i class="fas fa-user-circle fa-2x"></i>
                 </a>
             </div>
@@ -323,12 +323,11 @@
 
     
     <!-- modal signin -->
-        <div class="sign-in">
-            <div>
-                <form class="form-container">
+        <div class="signin" id="signIn">
+            <div class="signin-pop">
+                <form class="signin-box">
                     <label for="email">Email</label>
                     <input type="text" name="email">
-                    
                 </form>
             </div>
         </div>
@@ -337,6 +336,9 @@
     const popup = document.querySelector('.popup');
     const close = document.querySelector('#close');
     const overlay = document.querySelector('.overlay');
+    const signinbtn = document.querySelector('.signin-btn');
+    const signin = document.querySelector('.signin');
+    const signinpop = document.querySelector('.signin-pop')
 
     window.onload = function(){
         setTimeout(function(){
@@ -348,6 +350,11 @@
         popup.style.display = "none";
         overlay.style.display = "none";
     })
+    signinbtn.onclick = function(){
+        signinpop.style.display = "block";
+        signin.style.display = "block";
+    }
+
 </script>
 <script src="../dist/js/main.js"></script>
         
