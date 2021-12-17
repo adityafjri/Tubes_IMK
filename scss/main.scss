@@ -421,7 +421,19 @@ body{
     }
 
 // Faq 
-    .hero-contFaq{
+.faq{
+    margin-top: 7vh;
+    height: 100vh;
+    .faq-image{
+        height: 100%;
+        background-position:bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    .faq-contFaq{
         display: flex;
         width: 40%;
         justify-content: center;  
@@ -434,7 +446,7 @@ body{
             font-size: 6vh;
         }
     }
-    .hero-contFaq2{
+    .faq-contFaq2{
         justify-content: center;
         align-items: center;
         width: 60%;
@@ -455,4 +467,6 @@ body{
             display: block;
         }
     }
+}
+}
 }

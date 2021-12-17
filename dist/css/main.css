@@ -356,30 +356,42 @@ body {
           transform: scaleX(1);
           transition: transform 0.5s ease-in-out;
           transform-origin: left; }
-  body .hero-contFaq {
-    display: flex;
-    width: 40%;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-    flex-direction: row; }
-    body .hero-contFaq .titFaq {
-      padding: 20% 30% 20% 35%;
-      border-right: 2px #191919 groove;
-      font-size: 6vh; }
-  body .hero-contFaq2 {
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    display: flex;
-    height: 100%;
-    flex-direction: column; }
-    body .hero-contFaq2 .dropdownFaq {
-      position: relative; }
-    body .hero-contFaq2 .dropdownFaqCont {
-      display: none;
-      box-shadow: 0px 8px 20px 0px;
-      padding: 10px;
-      position: absolute; }
-    body .hero-contFaq2 .dropdownFaq:hover .dropdownFaqCont {
-      display: block; }
+  body .faq {
+    margin-top: 7vh;
+    height: 100vh; }
+    body .faq .faq-image {
+      height: 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      body .faq .faq-image .faq-contFaq {
+        display: flex;
+        width: 40%;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        flex-direction: row; }
+        body .faq .faq-image .faq-contFaq .titFaq {
+          padding: 20% 30% 20% 35%;
+          border-right: 2px #191919 groove;
+          font-size: 6vh; }
+      body .faq .faq-image .faq-contFaq2 {
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        display: flex;
+        height: 100%;
+        flex-direction: column; }
+        body .faq .faq-image .faq-contFaq2 .dropdownFaq {
+          position: relative; }
+        body .faq .faq-image .faq-contFaq2 .dropdownFaqCont {
+          display: none;
+          box-shadow: 0px 8px 20px 0px;
+          padding: 10px;
+          position: absolute; }
+        body .faq .faq-image .faq-contFaq2 .dropdownFaq:hover .dropdownFaqCont {
+          display: block; }
