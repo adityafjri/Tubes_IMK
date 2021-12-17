@@ -11,32 +11,76 @@ body{
     // min-height: 330vh;
 //login modal
     .signin{
+        top: 0;
         position: fixed;
         height: 1000%;
         width: 100%;
         background: #121212;
         opacity: 70%;
         z-index: 10;
+        display:none;
+    }
+    .signinpop{
         display: none;
-        .signin-pop{
-            display: block;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            z-index: 100;
-            .signin-box{
-                position: relative;
-                width: 600px;
-                height: 100px;
-                background-color:burlywood;
-                /* text-align: center; */
-                display: flex;
-                align-items: center;
-                justify-content: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 100;
+        background-color: $primary-color;
+        #exit{
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            width: 40px;
+            height: 40px;
+            /* background-color: ; */
+        }
+        #exit:hover{
+            cursor: pointer;
+        }
+        h1{
+            margin: 0 0 0 5%;
+            padding: 3vh;
+        }
+        .signin-box{
+            position: relative;
+            width: 600px;
+            height: 150px;
+            background-color:$primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            label{
+                padding: 1vh;
             }
         }
+        input{
+            width: 50%;
+            background-color: #c4c4c4;
+            list-style: none;
+            text-decoration: none;
+            border-color: transparent;
+        }
+    }
+    .signn{
+        margin-left: 78%;
+        padding: 3vh;
         
+        button{
+            border-color: transparent;
+            background-color: #121212;
+        }
+        a{
+            color: $primary-color;
+            list-style: none;
+            text-decoration: none;
+        }
+        i{
+            color: $primary-color;
+            padding: 1vh;
+        }
     }
 
     

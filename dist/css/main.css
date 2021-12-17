@@ -81,9 +81,9 @@
 
 body {
   margin: 0;
-  padding: 0;
-  height: 300vh; }
+  padding: 0; }
   body .signin {
+    top: 0;
     position: fixed;
     height: 1000%;
     width: 100%;
@@ -91,22 +91,56 @@ body {
     opacity: 70%;
     z-index: 10;
     display: none; }
-    body .signin .signin-pop {
-      display: block;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 100; }
-      body .signin .signin-pop .signin-box {
-        position: relative;
-        width: 600px;
-        height: 100px;
-        background-color: burlywood;
-        /* text-align: center; */
-        display: flex;
-        align-items: center;
-        justify-content: center; }
+  body .signinpop {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: #f3f3f1; }
+    body .signinpop #exit {
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      width: 40px;
+      height: 40px;
+      /* background-color: ; */ }
+    body .signinpop #exit:hover {
+      cursor: pointer; }
+    body .signinpop h1 {
+      margin: 0 0 0 5%;
+      padding: 3vh; }
+    body .signinpop .signin-box {
+      position: relative;
+      width: 600px;
+      height: 150px;
+      background-color: #f3f3f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      body .signinpop .signin-box label {
+        padding: 1vh; }
+    body .signinpop input {
+      width: 50%;
+      background-color: #c4c4c4;
+      list-style: none;
+      text-decoration: none;
+      border-color: transparent; }
+  body .signn {
+    margin-left: 78%;
+    padding: 3vh; }
+    body .signn button {
+      border-color: transparent;
+      background-color: #121212; }
+    body .signn a {
+      color: #f3f3f1;
+      list-style: none;
+      text-decoration: none; }
+    body .signn i {
+      color: #f3f3f1;
+      padding: 1vh; }
   body .catalogue-feature {
     display: flex;
     flex-direction: row;

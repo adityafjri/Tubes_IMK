@@ -19,6 +19,7 @@
         opacity: 70%;
         z-index: 10;
         display: none;
+        top: 0;
     }
     .popup{
         display: none;
@@ -67,6 +68,21 @@
                 </div>
             </div>
 
+    <!-- modal signin -->
+    <div class="signin"></div>
+    <div class="signinpop">
+        <i class="fas fa-times" id="exit" ></i>
+        <h1>Login</h1>
+        <div class="signin-box">
+            <label>Email</label>
+            <input type="text" name="email">
+            <label>Password</label>
+            <input type="password" name="password">
+        </div>
+        <div class="signn">
+            <button><a href="../dist/index.html">Sign In</a><i class="fa fa-arrow-right"></i></button>
+        </div>
+    </div>
     <!-- tool -->
     <div class="tool">
         <div class="menu-btn">
@@ -323,7 +339,7 @@
             
         </div>
     </div>
-
+    
     <!-- footer -->
     <div class="footer">
         <p><i class="fab fa-github"></i> <span> : </span> <a href="https://github.com/adityafjri/TubesIMK" target="_blank">Trace Our Work Here !</a></p>
@@ -332,23 +348,18 @@
     </div>
 
     
-    <!-- modal signin -->
-        <div class="signin" id="signIn">
-            <div class="signin-pop">
-                <form class="signin-box">
-                    <label for="email">Email</label>
-                    <input type="text" name="email">
-                </form>
-            </div>
-        </div>
+    
+    
+
 </body>
 <script>
     const popup = document.querySelector('.popup');
     const close = document.querySelector('#close');
     const overlay = document.querySelector('.overlay');
-    const signinbtn = document.querySelector('.signin-btn');
-    const signin = document.querySelector('.signin');
-    const signinpop = document.querySelector('.signin-pop')
+    // const signinbtn = document.querySelector('.signin-btn');
+    // const signin = document.querySelector('.signin');
+    // const signinpop = document.querySelector('.signinpop');
+    // const exit = document.querySelector('#exit');
 
     window.onload = function(){
         setTimeout(function(){
@@ -360,10 +371,14 @@
         popup.style.display = "none";
         overlay.style.display = "none";
     })
-    signinbtn.onclick = function(){
-        signinpop.style.display = "block";
-        signin.style.display = "block";
-    }
+    // signinbtn.onclick = function(){
+    //     signin.style.display = "block";
+    //     signinpop.style.display = "block";
+    // }
+    // exit.onclick = function(){
+    //     signin.style.display = "none";
+    //     signinpop.style.display = "none";
+    // }
 
 </script>
 <script src="../dist/js/main.js"></script>

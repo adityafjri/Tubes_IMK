@@ -6,15 +6,27 @@ const logoJohn = document.querySelector('.logo')
 // const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
 const signinBtn = document.querySelector('.signin-btn');
+const signinbtn = document.querySelector('.signin-btn');
+const signin = document.querySelector('.signin');
+const signinpop = document.querySelector('.signinpop');
+const exit = document.querySelector('#exit');
 
 let showMenu = false;
 
 heroBtn.addEventListener('click',redirectCatalogue);
 menuBtn.addEventListener('click', toggleMenu);
 logoJohn.addEventListener('click',redirectHome);
-signinBtn.addEventListener('click',signinPop);
+signinbtn.addEventListener('click',signinPop);
+exit.addEventListener('click',closeSignin);
 
-
+function signinPop(){
+    signin.style.display = "block";
+    signinpop.style.display = "block";
+}
+function closeSignin(){
+    signin.style.display = "none";
+    signinpop.style.display = "none";
+}
 function redirectHome(){
     console.log("home")
     window.location='index.html'
@@ -45,8 +57,5 @@ function toggleMenu() {
 
         showMenu = false;
     }
-}
-function signinPop(){
-    document.getElementById("")
 }
 
