@@ -289,12 +289,25 @@ body {
       body .best-seller .container .innerContainer {
         margin-bottom: 20px; }
         body .best-seller .container .innerContainer .btn {
-          margin-left: 25px; }
+          margin-left: 25px;
+          display: flex;
+          flex-direction: column;
+          width: 320px; }
           body .best-seller .container .innerContainer .btn a {
+            margin-bottom: 5px;
             color: #f3f3f1;
             text-decoration: none;
-            padding: 15px 129px;
-            background-color: #191919; }
+            padding: 15px 110px;
+            background-color: #191919;
+            text-align: center; }
+            body .best-seller .container .innerContainer .btn a.harga {
+              color: #191919;
+              background-color: #f3f3f1;
+              border: 1px solid #191919; }
+              body .best-seller .container .innerContainer .btn a.harga:hover {
+                color: #191919;
+                background-color: #f3f3f1;
+                cursor: default; }
             body .best-seller .container .innerContainer .btn a:hover {
               color: #191919;
               background-color: #f3f3f1;
