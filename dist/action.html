@@ -58,19 +58,27 @@
         </div>
 
         <div class="nav-menu-mid">
-            <a href="#"><h3>Home</h3></a>
-            <a href="#"><h3>Catalogue</h3></a>
-            <a href="#"><h3>FAQ</h3></a>
+            <a href="../dist/index.html"><h3>Home</h3></a>
+            <a href="../dist/catalogue.html"><h3>Catalogue</h3></a>
+            <a href="../dist/faq.html"><h3>FAQ</h3></a>
         </div>
 
         <div class="nav-menu-right">
             <div class="nav-menu-right-cur">
-                <p><strong>Currency</strong></p>
+                <a class="currency"><strong>Currency :</strong></a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn">IDR</button>
+                    <div class="nav-drop-cont">
+                        <a href="#">USD</a>
+                        <a href="#">EUR</a>
+                        <a href="#">AUD</a>
+                    </div>
+                </div>
             </div>
             <div class="nav-menu-right-icon">
-                <!-- <a href="">
+                <a href="../dist/cart.html">
                     <i class="fas fa-shopping-cart fa-2x"></i>
-                </a> -->
+                </a>
                 <a href="#" class="signin-btn">
                     <i class="fas fa-user-circle fa-2x"></i>
                 </a>
@@ -82,12 +90,13 @@
     <div class="catalogue-feature">
         <ul class="feature-menu">
             <li style="background-color: white;"><h2>Filter by :</h2></li>
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Horror</a></li>
-            <li><a href="#">Sci-fi</a></li>
+            <li><a href="../dist/action.html">Action</a></li>
+            <li><a href="../dist/horror.html">Horror</a></li>
+            <li><a href="../dist/scifi.html">Sci-fi</a></li>
         </ul>
         <div class="search-bar">
-            <i class="fas fa-search"></i>
+            <input type="text" class="search-input"></input>
+            <a href="../dist/search.html"><i class="fas fa-search"></i></a>
         </div>
     </div>
 
@@ -131,7 +140,6 @@
                             </p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="btn">
                     <a class="harga">Rp.100000</a>

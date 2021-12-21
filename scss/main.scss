@@ -206,6 +206,10 @@ body{
     .search-bar{
         i{
             font-size: 5vh;
+            color: $secondary-color;
+        }
+        .search-input{
+            border-radius: 4px;;
         }
     }
     .feature-menu{
@@ -361,6 +365,10 @@ body{
             .currency{
                 font-size: 19px;
             }
+            // #cart:active{
+                
+            //     filter: drop-shadow(2px 2px 5px red);
+            // }
             button{
                 border: solid $secondary-color;
                 border-radius: 8px;

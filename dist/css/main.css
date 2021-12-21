@@ -227,7 +227,10 @@ body {
     align-items: center;
     border-bottom: 4px solid #191919; }
     body .catalogue-feature .search-bar i {
-      font-size: 5vh; }
+      font-size: 5vh;
+      color: #191919; }
+    body .catalogue-feature .search-bar .search-input {
+      border-radius: 4px; }
     body .catalogue-feature .feature-menu {
       list-style-type: none;
       padding: 0;
