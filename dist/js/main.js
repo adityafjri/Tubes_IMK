@@ -12,8 +12,12 @@ const signinpop = document.querySelector('.signinpop');
 const exit = document.querySelector('#exit');
 
 const signinBtn2 = document.querySelector('.signn');
+const themeBtn = document.querySelector('.nav-link');
+const fontBtn = document.querySelector('#change-font');
 
-// let showMenu = false;
+const btnCart = document.querySelectorAll('.btn');
+const overCard = document.querySelectorAll('.card');
+let showMenu = false;
 
 heroBtn.addEventListener('click',redirectCatalogue);
 menuBtn.addEventListener('click', toggleMenu);
@@ -21,6 +25,66 @@ logoJohn.addEventListener('click',redirectHome);
 signinbtn.addEventListener('click',signinPop);
 exit.addEventListener('click',closeSignin);
 signinBtn2.addEventListener('click',signIn);
+themeBtn.addEventListener('click',changeTheme);
+fontBtn.addEventListener('click',changeFont);
+
+function changeFont(){
+    console.log("font");
+    if(!showMenu){
+        var listP = document.querySelectorAll("p");
+        var listA = document.querySelectorAll("a");
+
+        for(let i=0; i<listP.length; i++){
+            listP[i].style.fontSize="1.7em";
+        }
+
+        for(let i=0; i<listA.length; i++){
+            listA[i].style.fontSize="1.5em";
+        }
+        showMenu = true;
+    }
+    else{
+        var listP = document.querySelectorAll("p");
+        var listA = document.querySelectorAll("a");
+
+        for(let i=0; i<listP.length; i++){
+            listP[i].style.fontSize="1.3em";
+        }
+        for(let i=0; i<listA.length; i++){
+            listA[i].style.fontSize="1.3em";
+        }
+        showMenu = false;
+    }
+    
+    // document.querySelector("p").style.fontSize="3em";
+}
+
+function changeTheme(){
+    console.log("lili");
+    if(!showMenu){
+        document.querySelector('.navbar').classList.add('dark');
+        heroBtn.classList.add('dark');
+        document.querySelector('.tool').classList.add('dark');
+        document.body.style.backgroundColor="#121212";
+        btnCart.forEach(item => item.classList.add('dark'));
+        document.querySelector('.text-banner').classList.add('dark');
+        document.querySelector('.footer').classList.add('dark');
+        overCard.forEach(item => item.classList.add('dark'));
+        document.querySelector('.content').style.color="black";
+        showMenu = true;
+    }
+    else{
+        document.querySelector('.navbar').classList.remove('dark');
+        heroBtn.classList.remove('dark');
+        document.querySelector('.tool').classList.remove('dark');
+        document.body.style.backgroundColor="#fff";
+        btnCart.forEach(item => item.classList.remove('dark'));
+        document.querySelector('.text-banner').classList.remove('dark');
+        document.querySelector('.footer').classList.remove('dark');
+        overCard.forEach(item => item.classList.remove('dark'));
+        showMenu = false;
+    }
+}
 
 function signIn(){
     console.log("lala")

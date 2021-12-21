@@ -1,4 +1,5 @@
 .menu-btn{
+    
     position:absolute;
     z-index: 30;
     left: 10px;
@@ -9,6 +10,7 @@
     @include easeOut;
 
     .btn-line {
+        border: 1px solid $primary-color;
         width:40px;
         height: 10px;
         margin:0 0 5px;
@@ -24,7 +26,7 @@
             background: $primary-color;
             //line 1 rotate
             &:nth-child(1){
-                transform:rotate(45deg) translate(15px,15px);
+                transform:rotate(45deg) translate(18px,16px);
             }
             //line 2 rotate
             &:nth-child(2){
@@ -101,7 +103,7 @@
     position: fixed;
     top: 90%;
     width: 100%;
-    opacity: 0.92%;
+    // opacity: 0.92%;
     display: block;
 }
 //delay nav item
