@@ -80,8 +80,10 @@
   transition-delay: 0.4s; }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  /* temporary stylesheet for popup  */ }
   body .signin {
     top: 0;
     position: fixed;
@@ -127,20 +129,91 @@ body {
       background-color: #c4c4c4;
       list-style: none;
       text-decoration: none;
-      border-color: transparent; }
+      border-color: transparent;
+      padding: 1vh 0vh; }
   body .signn {
     margin-left: 78%;
     padding: 3vh; }
     body .signn button {
       border-color: transparent;
-      background-color: #121212; }
-    body .signn a {
+      background-color: #191919;
       color: #f3f3f1;
-      list-style: none;
-      text-decoration: none; }
+      padding: 0 1vh; }
+      body .signn button:hover {
+        border: 1px solid #191919;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+        background-color: #f3f3f1;
+        color: #191919; }
+        body .signn button:hover i {
+          color: #191919; }
     body .signn i {
       color: #f3f3f1;
       padding: 1vh; }
+  body .overlay {
+    position: fixed;
+    height: 1000%;
+    width: 100%;
+    background: #191919;
+    opacity: 90%;
+    z-index: 10;
+    display: none;
+    top: -10vh; }
+  body .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100; }
+  body .contentBox {
+    display: none;
+    position: relative;
+    width: 600px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  body #close {
+    position: absolute;
+    top: -20px;
+    right: 80px;
+    color: #f3f3f1; }
+    body #close:hover {
+      cursor: pointer; }
+  body .dropbtn {
+    background-color: #ecdbba;
+    color: #191919;
+    padding: 3vh 10vh;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; }
+  body .dropdown {
+    position: relative;
+    display: inline-block; }
+  body .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #191919;
+    z-index: 1; }
+  body .dropdown-content h3 {
+    margin: 0;
+    font-weight: 300;
+    color: #f3f3f1;
+    padding: 3vh 16vh;
+    display: block; }
+  body .dropdown-content h3:hover {
+    background-color: #f3f3f1;
+    color: #191919;
+    cursor: pointer;
+    transition: all 0.3s ease-out; }
+  body .dropdown:hover .dropdown-content {
+    display: block; }
+  body .dropdown:hover .dropbtn {
+    background-color: #8E806A;
+    color: #f3f3f1;
+    transition: all 0.3s ease-out; }
   body .catalogue-feature {
     display: flex;
     flex-direction: row;

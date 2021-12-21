@@ -4,69 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/bd45d9ab9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/dist/css/main.css">
     
     <title>Home</title>
 </head>
-<style> 
-   /* temporary stylesheet for popup  */
-    .overlay{
-        position: fixed;
-        height: 1000%;
-        width: 100%;
-        background: #121212;
-        opacity: 70%;
-        z-index: 10;
-        display: none;
-        top: 0;
-    }
-    .popup{
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        z-index: 100;
-    }
-    .contentBox{
-        position: relative;
-        width: 600px;
-        height: 100px;
-        background-color:burlywood;
-        /* text-align: center; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .contentBox a{
-        /* text-decoration: none; */
-        font-size: 40px;
-        color: black;
-    }
-    #close{
-        position: absolute;
-        top: 20px;
-        right: 0px;
-        width: 40px;
-        height: 40px;
-        /* background-color: ; */
-    }
-    #close:hover{
-        cursor: pointer;
-    }
 
-</style> -->
 <body class="th light">
-            <!-- popup -->
-            
-            <div class="overlay"></div>
-                <div class="popup">
-                    <div class="contentBox">
-                        <i class="fas fa-times" id="close" ></i>
-                        <a href="https://github.com/adityafjri/TubesIMK" target="_blank">Choose your language</a>
+    <!-- popup -->
+    
+    <div class="overlay"></div>
+    <div class="popup">
+        <div class="contentBox">
+            <i class="far fa-times-circle fa-2x" id="close" ></i>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Choose your language <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <h3>Indonesia</h3>
+                    <h3>English(US)</h3>
+                    <h3>English(UK)</h3>
                 </div>
             </div>
+        </div>
+    </div>
 
     <!-- modal signin -->
     <div class="signin"></div>
@@ -80,7 +45,7 @@
             <input type="password" name="password">
         </div>
         <div class="signn">
-            <button><a href="../dist/index.html">Sign In</a><i class="fa fa-arrow-right"></i></button>
+            <button>Sign In<i class="fa fa-arrow-right"></i></button>
         </div>
     </div>
     <!-- tool -->
@@ -115,9 +80,9 @@
         </div>
 
         <div class="nav-menu-mid">
-            <a href="#"><h3>menu</h3></a>
-            <a href="#"><h3>menu</h3></a>
-            <a href="#"><h3>menu</h3></a>
+            <a href="../dist/index.html"><h3>Home</h3></a>
+            <a href="../dist/catalogue.html"><h3>Catalogue</h3></a>
+            <a href="../dist/faq.html"><h3>FAQ</h3></a>
         </div>
 
         <div class="nav-menu-right">

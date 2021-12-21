@@ -11,14 +11,22 @@ const signin = document.querySelector('.signin');
 const signinpop = document.querySelector('.signinpop');
 const exit = document.querySelector('#exit');
 
-let showMenu = false;
+const signinBtn2 = document.querySelector('.signn');
+
+// let showMenu = false;
 
 heroBtn.addEventListener('click',redirectCatalogue);
 menuBtn.addEventListener('click', toggleMenu);
 logoJohn.addEventListener('click',redirectHome);
 signinbtn.addEventListener('click',signinPop);
 exit.addEventListener('click',closeSignin);
+signinBtn2.addEventListener('click',signIn);
 
+function signIn(){
+    console.log("lala")
+    signin.style.display="none";
+    signinpop.style.display ="none";
+}
 function signinPop(){
     signin.style.display = "block";
     signinpop.style.display = "block";

@@ -5,7 +5,7 @@
 
 
 body{
-    
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     // min-height: 330vh;
@@ -62,21 +62,32 @@ body{
             list-style: none;
             text-decoration: none;
             border-color: transparent;
+            padding: 1vh 0vh;
         }
     }
     .signn{
         margin-left: 78%;
         padding: 3vh;
         
+        
         button{
             border-color: transparent;
-            background-color: #121212;
-        }
-        a{
+            background-color: $secondary-color;
             color: $primary-color;
-            list-style: none;
-            text-decoration: none;
+            padding: 0 1vh;
+            &:hover{
+                border: 1px solid $secondary-color;
+                @include easeOut
+                cursor: pointer;
+                background-color: $primary-color;
+                color: $secondary-color;
+
+                i{
+                    color: $secondary-color;
+                }
+            }
         }
+        
         i{
             color: $primary-color;
             padding: 1vh;
@@ -84,29 +95,95 @@ body{
     }
 
     
-// cart
-// .cart{
-//     position: fixed;
-//     top: 90%;
-//     right: 8%;
-//     width: fit-content;
-//     // z-index: 30;
-//     .menu-btn{
-//         background-color: $secondary-color;
-//         padding: 10px;
-//         z-index: 30;
-//         // right: 8%;
-//         cursor: pointer;
-        
-//     }
-//     .cart-btn:hover{
-        
-//     }
-//     i{
-//         font-size: 5vh;
-//         color: $primary-color;
-//     }
-// }
+/* temporary stylesheet for popup  */
+.overlay{
+    position: fixed;
+    height: 1000%;
+    width: 100%;
+    background: $secondary-color;
+    opacity: 90%;
+    z-index: 10;
+    display: none;
+    top: -10vh;
+}
+.popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
+.contentBox{
+    display: none;
+    position: relative;
+    width: 600px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#close{
+    position: absolute;
+    top: -20px;
+    right: 80px;
+    color: $primary-color;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}
+#close:hover{
+    
+}
+// popup-language
+.dropbtn {
+    background-color: $teal-color;
+    color: $secondary-color;
+    padding: 3vh 10vh;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: $secondary-color;
+    z-index: 1;
+  }
+  
+  .dropdown-content h3 {
+    margin: 0;
+    font-weight: 300;
+    color: $primary-color;
+    padding: 3vh 16vh;
+    display: block;
+  }
+  
+  .dropdown-content h3:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+    cursor: pointer;
+    @include easeOut
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: $dark-teal;
+    color: $primary-color;
+    @include easeOut
+  }
 
 // catalogue feature
 .catalogue-feature{
