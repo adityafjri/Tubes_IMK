@@ -5,13 +5,13 @@ const menuNav = document.querySelector('.menu-nav');
 const logoJohn = document.querySelector('.logo')
 // const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
-const signinBtn = document.querySelector('.signin-btn');
-const signinbtn = document.querySelector('.signin-btn');
-const signin = document.querySelector('.signin');
-const signinpop = document.querySelector('.signinpop');
-const exit = document.querySelector('#exit');
+// const signinBtn = document.querySelector('.signin-btn');
+// const signinbtn = document.querySelector('.signin-btn');
+// const signin = document.querySelector('.signin');
+// const signinpop = document.querySelector('.signinpop');
+// const exit = document.querySelector('#exit');
 
-const signinBtn2 = document.querySelector('.signn');
+// const signinBtn2 = document.querySelector('.signn');
 const themeBtn = document.querySelector('.nav-link');
 const fontBtn = document.querySelector('#change-font');
 
@@ -22,9 +22,9 @@ let showMenu = false;
 heroBtn.addEventListener('click',redirectCatalogue);
 menuBtn.addEventListener('click', toggleMenu);
 logoJohn.addEventListener('click',redirectHome);
-signinbtn.addEventListener('click',signinPop);
-exit.addEventListener('click',closeSignin);
-signinBtn2.addEventListener('click',signIn);
+// signinbtn.addEventListener('click',signinPop);
+// exit.addEventListener('click',closeSignin);
+// signinBtn2.addEventListener('click',signIn);
 themeBtn.addEventListener('click',changeTheme);
 fontBtn.addEventListener('click',changeFont);
 
@@ -86,19 +86,19 @@ function changeTheme(){
     }
 }
 
-function signIn(){
-    console.log("lala")
-    signin.style.display="none";
-    signinpop.style.display ="none";
-}
-function signinPop(){
-    signin.style.display = "block";
-    signinpop.style.display = "block";
-}
-function closeSignin(){
-    signin.style.display = "none";
-    signinpop.style.display = "none";
-}
+// function signIn(){
+//     console.log("lala")
+//     signin.style.display="none";
+//     signinpop.style.display ="none";
+// }
+// function signinPop(){
+//     signin.style.display = "block";
+//     signinpop.style.display = "block";
+// }
+// function closeSignin(){
+//     signin.style.display = "none";
+//     signinpop.style.display = "none";
+// }
 function redirectHome(){
     console.log("home")
     window.location='index.html'

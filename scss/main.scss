@@ -80,13 +80,17 @@ body{
             background-color: $secondary-color;
             color: $primary-color;
             padding: 0 1vh;
+            a{
+                text-decoration: none;
+                list-style: none;
+                color: $primary-color;
+            }
             &:hover{
                 border: 1px solid $secondary-color;
                 @include easeOut
                 cursor: pointer;
                 background-color: $primary-color;
                 color: $secondary-color;
-
                 i{
                     color: $secondary-color;
                 }
@@ -353,10 +357,39 @@ body{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            align-items: center;
+            .currency{
+                font-size: 19px;
+            }
+            button{
+                border: solid $secondary-color;
+                border-radius: 8px;
+            }
+            .nav-dropdown{
+                position: relative;
+                display: inline-block;
+                .nav-drop-cont{
+                    display: none;
+                    position: absolute;
+                    background-color: $primary-color;
+                    width: 60px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    border-radius: 8px;
+                }
+                .a{
+                    color: $secondary-color;
+                    padding: 12px;
+                    text-decoration: none;
+                    display: block;
+                }
+                &:hover .nav-drop-cont{
+                    display: block;
+                }
+            }
             .nav-menu-right-cur{
                 padding-left: 8vh;
             }
-
             .nav-menu-right-icon{
                 width: 20%;
                 display: flex;
@@ -790,7 +823,7 @@ body{
 
 // Faq 
 .faq{
-    margin-top: 7vh;
+    margin-top: 2%;
     height: 100vh;
     .faq-image{
         height: 100%;
@@ -823,12 +856,16 @@ body{
         flex-direction: column;
         .dropdownFaq{
             position: relative;
+            border-top: 0;
+            border-bottom: 2px solid;
+            ul{
+                padding-left: 0%;
+            }     
         }
         .dropdownFaqCont{
-            display: none;
-            box-shadow: 0px 8px 20px 0px;
-            padding: 10px;
-            
+            display: none; 
+            font-size: 2.2vh;
+            font-weight: 800px;
         }
         .dropdownFaq:hover .dropdownFaqCont{
             display: flex;
@@ -837,5 +874,41 @@ body{
         }
     }
 }
+}
+.cart{
+    margin-top: 6%;
+    height: 67vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cart-box{
+        width: 70%;
+        height: 80%;
+        border:solid $secondary-color;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        table{
+            width: 100%;
+            text-align: center;
+            th,td{
+                border-bottom: 2px solid rgba($secondary-color,0.9);
+                padding: 1.3vh;
+                .add{
+                    background-color: $dark-teal;
+                    border-radius: 4px;
+                    border: 1px solid $secondary-color;
+                }
+                .angka{
+                    border: transparent;
+                    background-color: white;
+                    padding: 2vh;
+                }
+            }
+            .total{
+                text-align: left;
+            }
+        }
+    }
 }
 }

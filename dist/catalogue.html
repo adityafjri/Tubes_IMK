@@ -58,19 +58,27 @@
         </div>
 
         <div class="nav-menu-mid">
-            <a href="#"><h3>menu</h3></a>
-            <a href="#"><h3>menu</h3></a>
-            <a href="#"><h3>menu</h3></a>
+            <a href="../dist/index.html"><h3>Home</h3></a>
+            <a href="../dist/catalogue.html"><h3>Catalogue</h3></a>
+            <a href="../dist/faq.html"><h3>FAQ</h3></a>
         </div>
 
         <div class="nav-menu-right">
             <div class="nav-menu-right-cur">
-                <p><strong>Currency</strong></p>
+                <a class="currency"><strong>Currency :</strong></a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn">IDR</button>
+                    <div class="nav-drop-cont">
+                        <a href="#">USD</a>
+                        <a href="#">EUR</a>
+                        <a href="#">AUD</a>
+                    </div>
+                </div>
             </div>
             <div class="nav-menu-right-icon">
-                <!-- <a href="">
+                <a href="../dist/cart.html">
                     <i class="fas fa-shopping-cart fa-2x"></i>
-                </a> -->
+                </a>
                 <a href="#" class="signin-btn">
                     <i class="fas fa-user-circle fa-2x"></i>
                 </a>
@@ -243,6 +251,10 @@
     const menuNav = document.querySelector('.menu-nav');
     const logoJohn = document.querySelector('.logo')
     const navItems = document.querySelectorAll('.nav-item');
+    const signinbtn = document.querySelector('.signin-btn');
+    const signin = document.querySelector('.signin');
+    const signinpop = document.querySelector('.signinpop');
+    const exit = document.querySelector('#exit');
 
     let showMenu = false;
 
@@ -253,8 +265,6 @@ function redirectHome(){
     console.log("home")
     window.location='index.html'
 }
-
-
 function toggleMenu() {
     console.log("ha");
     if (!showMenu) {
@@ -276,6 +286,14 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+    signinbtn.onclick = function(){
+        signin.style.display = "block";
+        signinpop.style.display = "block";
+    }
+    exit.onclick = function(){
+        signin.style.display = "none";
+        signinpop.style.display = "none";
+    }
 
 </script>
 <script src="../dist/js/main.js"></script>
