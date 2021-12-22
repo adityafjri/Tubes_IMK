@@ -998,6 +998,71 @@ body{
         }
     }
 }
+.checkout{
+    margin-top: 7vh;
+    height: 100vh;
+    .checkout-image{
+        height: 100%;
+        background-position:bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .checkout-box{
+            width: 50%;
+        }
+        .checkout-box2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            .checkout-box2-in{
+                height: 75%;
+                width: 60%;
+                border: solid $secondary-color;
+                border-radius: 8px;
+                background-color: $secondary-color;
+                .checkout-form{
+                    color: $primary-color;
+                    display: flex;
+                    flex-direction: column;
+                    h2{
+                        margin-top: 2vh;
+                        margin-left: 2vh;
+                    }
+
+                    .checkout-form2{
+                        align-items: flex-start;
+                        input{
+                            width: 90%;
+                            border-radius: 8px;
+                            height: 5vh;
+                            border: 2px solid $secondary-color;
+                            margin-left: 2vh;
+                        }
+                    }
+                    button{
+                        border: 2px $secondary-color;
+                        border-radius: 8px;
+                        margin-top: 8.5vh;
+                        margin-left: 1vh;
+                        margin-right: 1vh;
+                        height: 7vh;
+                        a{
+                            font-size: 19px;
+                            color: $secondary-color;
+                            text-decoration: none;
+                            list-style: none;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
 .background{
     background-color: $teal-color;
 }

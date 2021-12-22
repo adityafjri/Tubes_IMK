@@ -794,6 +794,58 @@ body {
             padding: 2vh; }
         body .cart .cart-box table .total {
           text-align: left; }
+  body .checkout {
+    margin-top: 7vh;
+    height: 100vh; }
+    body .checkout .checkout-image {
+      height: 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      body .checkout .checkout-image .checkout-box {
+        width: 50%; }
+      body .checkout .checkout-image .checkout-box2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%; }
+        body .checkout .checkout-image .checkout-box2 .checkout-box2-in {
+          height: 75%;
+          width: 60%;
+          border: solid #191919;
+          border-radius: 8px;
+          background-color: #191919; }
+          body .checkout .checkout-image .checkout-box2 .checkout-box2-in .checkout-form {
+            color: #f3f3f1;
+            display: flex;
+            flex-direction: column; }
+            body .checkout .checkout-image .checkout-box2 .checkout-box2-in .checkout-form h2 {
+              margin-top: 2vh;
+              margin-left: 2vh; }
+            body .checkout .checkout-image .checkout-box2 .checkout-box2-in .checkout-form .checkout-form2 {
+              align-items: flex-start; }
+              body .checkout .checkout-image .checkout-box2 .checkout-box2-in .checkout-form .checkout-form2 input {
+                width: 90%;
+                border-radius: 8px;
+                height: 5vh;
+                border: 2px solid #191919;
+                margin-left: 2vh; }
+            body .checkout .checkout-image .checkout-box2 .checkout-box2-in .checkout-form button {
+              border: 2px #191919;
+              border-radius: 8px;
+              margin-top: 8.5vh;
+              margin-left: 1vh;
+              margin-right: 1vh;
+              height: 7vh; }
+              body .checkout .checkout-image .checkout-box2 .checkout-box2-in .checkout-form button a {
+                font-size: 19px;
+                color: #191919;
+                text-decoration: none;
+                list-style: none; }
   body .background {
     background-color: #ecdbba; }
   body .judul1 {
