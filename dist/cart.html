@@ -27,7 +27,7 @@
     <!-- navigasi -->
     <div class="navbar">
         <div class="nav-logo">
-            <h1>Om-John</h1>
+            <h1 class="logo">Om-John</h1>
         </div>
 
         <div class="nav-menu-mid">
@@ -76,9 +76,9 @@
                         <h3>Author : Jeremia Halomoan</h3>
                     </td>
                     <td>
-                        <button class="add">+</button>
-                        <button class="angka"><a>1</a></button>
                         <button class="add">-</button>
+                        <button class="angka"><a>1</a></button>
+                        <button class="add">+</button>
                     </td>
                     <td>
                         <a>Rp 100.000,00</a>
@@ -110,6 +110,10 @@
                 </tr>
             </table>
         </div>
+        <div class="btn-checkout">
+            
+            <a class="dummy-button">Check Out</a>
+        </div>
     </div>
 
       <!-- footer -->
@@ -124,6 +128,36 @@
     const signin = document.querySelector('.signin');
     const signinpop = document.querySelector('.signinpop');
     const exit = document.querySelector('#exit');
+    const logoJohn = document.querySelector('.logo');
+    logoJohn.addEventListener('click',redirectHome);
+    const btnCheckout = document.querySelector('.btn-checkout');
+
+    btnCheckout.addEventListener('click',function(){
+        // alert("Apakah anda yakin akan melakukan checkout?");
+        let status = prompt("Silahkan transfer ke no. rekening berikut : 12345", "Waktu transfer (dd/mm/yy | hh:mm)");
+        if(status==null || status==""){
+            window.location="cart.html";
+        }else{
+            let alamat = prompt("Masukan alamat anda");
+            if(alamat == null || alamat==""){
+                window.location="cart.html";
+            }else{
+                if(alert("Apakah anda yakin akan melakukan checkout?")){
+                window.location='cart.html';
+                
+            }else{
+                window.location='index2.html';
+            }
+            }
+            
+        }
+        
+    })
+
+    function redirectHome(){
+    console.log("home")
+    window.location='index.html'
+    }
 
     signinbtn.onclick = function(){
         signin.style.display = "block";
