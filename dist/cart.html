@@ -109,6 +109,10 @@
                 </tr>
             </table>
         </div>
+        <div class="btn-checkout">
+            
+            <a class="dummy-button">Check Out</a>
+        </div>
     </div>
 
       <!-- footer -->
@@ -125,6 +129,29 @@
     const exit = document.querySelector('#exit');
     const logoJohn = document.querySelector('.logo');
     logoJohn.addEventListener('click',redirectHome);
+    const btnCheckout = document.querySelector('.btn-checkout');
+
+    btnCheckout.addEventListener('click',function(){
+        // alert("Apakah anda yakin akan melakukan checkout?");
+        let status = prompt("Silahkan transfer ke no. rekening berikut : 12345", "Waktu transfer (dd/mm/yy | hh:mm)");
+        if(status==null || status==""){
+            window.location="cart.html";
+        }else{
+            let alamat = prompt("Masukan alamat anda");
+            if(alamat == null || alamat==""){
+                window.location="cart.html";
+            }else{
+                if(alert("Apakah anda yakin akan melakukan checkout?")){
+                window.location='cart.html';
+                
+            }else{
+                window.location='index.html';
+            }
+            }
+            
+        }
+        
+    })
 
     function redirectHome(){
     console.log("home")
