@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bd45d9ab9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/dist/css/main.css">
-    <title>FAQ</title>
+    <title>CART</title>
 </head>
 <body class="th light">
     <!-- modal signin -->
@@ -27,7 +27,7 @@
     <!-- navigasi -->
     <div class="navbar">
         <div class="nav-logo">
-            <h1>Om-John</h1>
+            <h1 class="logo">Om-John</h1>
         </div>
 
         <div class="nav-menu-mid">
@@ -123,6 +123,13 @@
     const signin = document.querySelector('.signin');
     const signinpop = document.querySelector('.signinpop');
     const exit = document.querySelector('#exit');
+    const logoJohn = document.querySelector('.logo');
+    logoJohn.addEventListener('click',redirectHome);
+
+    function redirectHome(){
+    console.log("home")
+    window.location='index.html'
+    }
 
     signinbtn.onclick = function(){
         signin.style.display = "block";
@@ -133,5 +140,5 @@
         signinpop.style.display = "none";
     }
 </script>
-<script src="../dist/js/main.js"></script>
+<!-- <script src="../dist/js/main.js"></script> -->
 </html>

@@ -32,6 +32,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- modal signin -->
     <div class="signin"></div>
@@ -89,11 +90,11 @@
             <div class="nav-menu-right-cur">
                 <a class="currency"><strong>Currency :</strong></a>
                 <div class="nav-dropdown">
-                    <button class="nav-drop-btn">IDR</button>
+                    <button class="nav-drop-btn">USD</button>
                     <div class="nav-drop-cont">
-                        <a href="#">USD</a>
-                        <a href="#">EUR</a>
-                        <a href="#">AUD</a>
+                        <a class="currency-idr">IDR</a>
+                        <a >EUR</a>
+                        <a >AUD</a>
                     </div>
                 </div>
             </div>
@@ -163,7 +164,7 @@
             <div class="innerContainer">
                 <div class="card">
                     <div class="imgBox">
-                        <img src="../res/Buku.jpg" alt="">
+                        <img src="../res/action2.jpg" alt="">
                     </div>
                     <div class="contentBox">
                         <div class="content">
@@ -179,7 +180,7 @@
                 </div>
                 <div class="btn">
                     <a class="harga">Rp.100000</a>
-                    <a>Add to cart</a>
+                    <a class="dummy-button">Add to cart</a>
                 </div>
             </div>
             <div class="innerContainer">
@@ -245,10 +246,10 @@
     const popup = document.querySelector('.popup');
     const close = document.querySelector('#close');
     const overlay = document.querySelector('.overlay');
-    const signinbtn = document.querySelector('.signin-btn');
-    const signin = document.querySelector('.signin');
-    const signinpop = document.querySelector('.signinpop');
-    const exit = document.querySelector('#exit');
+    // const signinbtn = document.querySelector('.signin-btn');
+    // const signin = document.querySelector('.signin');
+    // const signinpop = document.querySelector('.signinpop');
+    // const exit = document.querySelector('#exit');
 
     window.onload = function(){
         setTimeout(function(){
@@ -260,10 +261,10 @@
         popup.style.display = "none";
         overlay.style.display = "none";
     })
-    signinbtn.onclick = function(){
-        signin.style.display = "block";
-        signinpop.style.display = "block";
-    }
+    // signinbtn.onclick = function(){
+    //     signin.style.display = "block";
+    //     signinpop.style.display = "block";
+    // }
     exit.onclick = function(){
         signin.style.display = "none";
         signinpop.style.display = "none";

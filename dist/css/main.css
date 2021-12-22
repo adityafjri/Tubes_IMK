@@ -225,12 +225,16 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 0 32vh 5vh 32vh;
     border-bottom: 4px solid #191919; }
     body .catalogue-feature .search-bar i {
-      font-size: 5vh;
+      font-size: 3vh;
       color: #191919; }
     body .catalogue-feature .search-bar .search-input {
-      border-radius: 4px; }
+      margin-right: 1vh;
+      height: 3vh;
+      border: 2px solid #191919;
+      width: 25vh; }
     body .catalogue-feature .feature-menu {
       list-style-type: none;
       padding: 0;
@@ -333,6 +337,9 @@ body {
       align-items: center; }
       body .navbar .nav-menu-right .currency {
         font-size: 19px; }
+        body .navbar .nav-menu-right .currency:hover {
+          cursor: default;
+          text-decoration: none; }
       body .navbar .nav-menu-right button {
         border: solid #191919;
         border-radius: 8px; }
@@ -347,6 +354,8 @@ body {
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           z-index: 1;
           border-radius: 8px; }
+          body .navbar .nav-menu-right .nav-dropdown .nav-drop-cont:hover {
+            cursor: pointer; }
         body .navbar .nav-menu-right .nav-dropdown .a {
           color: #191919;
           padding: 12px;
@@ -362,6 +371,11 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center; }
+        body .navbar .nav-menu-right .nav-menu-right-icon .fa-shopping-cart {
+          transition: all 0.3s ease-out; }
+        body .navbar .nav-menu-right .nav-menu-right-icon .fa-cart-arrow-down {
+          color: red;
+          transition: all 0.3s ease-out; }
         body .navbar .nav-menu-right .nav-menu-right-icon i {
           font-size: 4vh; }
   body .hero {
