@@ -737,3 +737,25 @@ body {
             padding: 2vh; }
         body .cart .cart-box table .total {
           text-align: left; }
+  body .background {
+    background-color: #ecdbba; }
+  body .judul1 {
+    float: left;
+    font-size: 3vh; }
+    body .judul1 pre {
+      margin-top: 5%;
+      font-size: 16pt; }
+    body .judul1 h1 {
+      margin-left: 45%; }
+  body .gambar1 {
+    width: 47%;
+    float: right; }
+  body .judul2 {
+    float: left; }
+    body .judul2 pre {
+      margin-top: 5%;
+      font-size: 16pt; }
+  body .gambar2 {
+    width: 47%;
+    float: left;
+    margin-top: 29px; }
