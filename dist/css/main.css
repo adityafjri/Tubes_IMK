@@ -783,7 +783,7 @@ body {
         text-align: center; }
         body .cart .cart-box table th, body .cart .cart-box table td {
           border-bottom: 2px solid rgba(25, 25, 25, 0.9);
-          padding: 1.3vh; }
+          padding: 0.85vh; }
           body .cart .cart-box table th .add, body .cart .cart-box table td .add {
             background-color: #8E806A;
             border-radius: 4px;

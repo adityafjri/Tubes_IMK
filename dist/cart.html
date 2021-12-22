@@ -27,7 +27,7 @@
     <!-- navigasi -->
     <div class="navbar">
         <div class="nav-logo">
-            <h1 class="logo">Om-John</h1>
+            <h1>Om-John</h1>
         </div>
 
         <div class="nav-menu-mid">
@@ -50,7 +50,7 @@
             </div>
             <div class="nav-menu-right-icon">
                 <a href="">
-                    <i id="cart" class="fas fa-shopping-cart fa-2x"></i>
+                    <i class="fas fa-shopping-cart fa-2x"></i>
                 </a>
                 <a href="#" class="signin-btn">
                     <i class="fas fa-user-circle fa-2x"></i>
@@ -69,34 +69,35 @@
                 </tr>
                 <tr>
                     <td>
-                        <h3>Milk and Honey</h3>
+                        <h3>The Foreigner</h3>
                         <div>
                             <img src="../res/action2.jpg" style="width: 100px;">
                         </div>
+                        <h3>Author : Jeremia Halomoan</h3>
                     </td>
                     <td>
-                        <button class="add">-</button>
-                        <button class="angka"><a>1</a></button>
                         <button class="add">+</button>
+                        <button class="angka"><a>1</a></button>
+                        <button class="add">-</button>
                     </td>
                     <td>
-                        <a>Rp 500.000,00</a>
+                        <a>Rp 100.000,00</a>
                     </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td colspan="2" class="total">
                         <a>Discount </a>
                     </td>
                     <td>
-                        <a>Rp.100.000,00</a>
+                        <a>Rp.20.000,00</a>
                     </td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td colspan="2" class="total">
                         <a>Tax </a>
                     </td>
                     <td>
-                        <a>Rp.50.000,00</a>
+                        <a>Rp.10.000,00</a>
                     </td>
                 </tr>
                 <tr>
@@ -104,14 +105,10 @@
                         <a>Total </a>
                     </td>
                     <td>
-                        <a>Rp.550.000,00</a>
+                        <a>Rp.110.000,00</a>
                     </td>
                 </tr>
             </table>
-        </div>
-        <div class="btn-checkout">
-            
-            <a class="dummy-button">Check Out</a>
         </div>
     </div>
 
@@ -127,36 +124,6 @@
     const signin = document.querySelector('.signin');
     const signinpop = document.querySelector('.signinpop');
     const exit = document.querySelector('#exit');
-    const logoJohn = document.querySelector('.logo');
-    logoJohn.addEventListener('click',redirectHome);
-    const btnCheckout = document.querySelector('.btn-checkout');
-
-    btnCheckout.addEventListener('click',function(){
-        // alert("Apakah anda yakin akan melakukan checkout?");
-        let status = prompt("Silahkan transfer ke no. rekening berikut : 12345", "Waktu transfer (dd/mm/yy | hh:mm)");
-        if(status==null || status==""){
-            window.location="cart.html";
-        }else{
-            let alamat = prompt("Masukan alamat anda");
-            if(alamat == null || alamat==""){
-                window.location="cart.html";
-            }else{
-                if(alert("Apakah anda yakin akan melakukan checkout?")){
-                window.location='cart.html';
-                
-            }else{
-                window.location='index2.html';
-            }
-            }
-            
-        }
-        
-    })
-
-    function redirectHome(){
-    console.log("home")
-    window.location='index.html'
-    }
 
     signinbtn.onclick = function(){
         signin.style.display = "block";
@@ -167,5 +134,5 @@
         signinpop.style.display = "none";
     }
 </script>
-<!-- <script src="../dist/js/main.js"></script> -->
+<script src="../dist/js/main.js"></script>
 </html>
