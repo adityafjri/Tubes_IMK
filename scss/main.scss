@@ -923,6 +923,7 @@ body{
     background-color: $teal-color;
 }
 .judul1{
+    margin-top: 5%;
     float: left;
     font-size: 3vh;
     pre{
@@ -930,7 +931,7 @@ body{
         font-size: 16pt;
     }
     h1{
-        margin-left: 45%;
+        margin-left: 50%;
     }
 }
 .gambar1{
@@ -939,9 +940,13 @@ body{
 }
 .judul2{
    float: left;
+   font-size: 3vh;
    pre{
     margin-top: 5%;
     font-size: 16pt;
+    }
+    h1{
+        margin-left: 50%;
     }
 }
 .gambar2{

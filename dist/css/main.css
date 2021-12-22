@@ -740,21 +740,25 @@ body {
   body .background {
     background-color: #ecdbba; }
   body .judul1 {
+    margin-top: 5%;
     float: left;
     font-size: 3vh; }
     body .judul1 pre {
       margin-top: 5%;
       font-size: 16pt; }
     body .judul1 h1 {
-      margin-left: 45%; }
+      margin-left: 50%; }
   body .gambar1 {
     width: 47%;
     float: right; }
   body .judul2 {
-    float: left; }
+    float: left;
+    font-size: 3vh; }
     body .judul2 pre {
       margin-top: 5%;
       font-size: 16pt; }
+    body .judul2 h1 {
+      margin-left: 50%; }
   body .gambar2 {
     width: 47%;
     float: left;
